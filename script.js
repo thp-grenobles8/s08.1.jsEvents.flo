@@ -40,16 +40,12 @@ let navbar = document.getElementsByClassName("navbar")[0];
 let link = document.getElementsByTagName("head")[0].getElementsByTagName("link")[0];
 navbar.addEventListener('dblclick', noBootstrap);
 function noBootstrap() {
-  link.disabled = true;
-  console.log(link.disabled);
-}
-firstCard.addEventListener('dblclick',bootstrap);
-function bootstrap() {
   if (link.disabled) {
     link.disabled = false;
+  } else {
+    link.disabled = true;
   }
 }
-
 //////////////////  Fonctionalité 6 ////////////////
 
 
